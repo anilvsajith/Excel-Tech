@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://use.fontawesome.com/587a024497.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <img class="header-logo" src="img/mec_logo.png">
+            <img class="header-logo" src="img/excel_logo.png">
+        </header>
+        <div class="main">
+            <div id="top-container">
+            </div>    
+        </div>
+        <div id="up-arrow">
+            <img id="up" src="img/arrows.svg" height="32px" width="32px">
+        </div>
+        <div id="game-nav">
+            <i class="fa fa-anchor fa-4x gameicon" aria-hidden="true"></i>
+            <i class="fa fa-bomb fa-4x gameicon" aria-hidden="true"></i>
+            <i class="fa fa-usd fa-4x gameicon" aria-hidden="true"></i>
+            <i class="fa fa-laptop fa-4x gameicon" aria-hidden="true"></i>
+            <i class="fa fa-terminal fa-4x gameicon" aria-hidden="true"></i>
+            <i class="fa fa-hourglass fa-4x gameicon" aria-hidden="true"></i>
+            <i class="fa fa-users fa-4x gameicon" aria-hidden="true"></i>
+            <i class="fa fa-cog fa-4x gameicon" aria-hidden="true"></i>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $(".gameicon").click(function(){
+                    $("#game-nav").css("bottom","-85px");
+                    $("#up-arrow").css("bottom","0px");
+                    $("#up-arrow").fadeIn(1000);
+                });
+            });
+            $(document).ready(function(){
+                $("#up").click(function(){
+                    $("#game-nav").css("bottom","0px");
+                    $("#up-arrow").css("bottom","55px");
+                    $("#up-arrow").fadeOut(750);                                        
+                });
+            });
+        </script>
+    </body>
+</html>

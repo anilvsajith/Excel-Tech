@@ -1,0 +1,70 @@
+html{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body{
+    margin: 0px;
+}
+
+header{
+    padding: 2px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo{
+    height: 60px;
+    margin: 5px
+}
+
+.main{
+    height: 100%;
+}
+
+#top-container{
+    height:30%; 
+}
+
+
+#up-arrow{
+    display: none;
+    z-index: 10;
+    text-align: center;
+    padding-bottom: 0px;
+    position: absolute;
+    bottom: 0;  
+    width: 100%;
+    -webkit-transition: height 0.25s;
+    transition: height 0.25s;  
+    -webkit-transition: width 0.25s;
+    transition: width 0.25s;
+    -webkit-transition: bottom 1s;
+    transition: bottom 1s;
+}
+
+#up:hover{
+    height: 38px;
+    width: 38px;
+}
+#game-nav{
+    z-index: 0;
+    padding-bottom: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: bottom 1s;
+    transition: bottom 1s;
+}
+
+.gameicon{
+    -webkit-transition: font-size 0.25s;
+    transition: font-size 0.25s;
+    padding: 0px 10px;
+}
+
+.gameicon:hover{
+    font-size: 5em;
+}
